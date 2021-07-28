@@ -1,0 +1,706 @@
+{
+	"info": {
+		"_postman_id": "0fbee37a-24dd-4da0-8008-f55de8b56702",
+		"name": "Proyecto Java Avanzado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Electric",
+			"item": [
+				{
+					"name": "/api/electric",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electric/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electric",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electric/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electric/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electric",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electric/manufacturer/Audi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electric/manufacturer/Audi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electric",
+								"manufacturer",
+								"Audi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electric/color/Red",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electric/color/Red",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electric",
+								"color",
+								"Red"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electric/doors/5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electric/doors/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electric",
+								"doors",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Extra: ver Facade tipo Electric",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicle/electric",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicle",
+								"electric"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electric",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 0,\r\n        \"manufacturer\": \"Peugeot\",\r\n        \"model\": \"E-208\",\r\n        \"color\": \"ElectricBlue\",\r\n        \"airConditioner\": {\r\n            \"id\": 1,\r\n            \"numAirVents\": 6,\r\n            \"on\": true\r\n        },\r\n        \"battery\": {\r\n            \"id\": 1,\r\n            \"capacity\": \"85kWh\",\r\n            \"on\": true\r\n        },\r\n        \"carDoors\": {\r\n            \"id\": 1,\r\n            \"doors\": 5\r\n        },\r\n        \"engine\": {\r\n            \"id\": 1,\r\n            \"cc\": 2000.0,\r\n            \"cv\": 140.0,\r\n            \"on\": true\r\n        },\r\n        \"chargingPort\": {\r\n            \"id\": 1,\r\n            \"numPorts\": 3,\r\n            \"timeCharge\": \"55 minutos\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/electric",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electric"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electric",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"manufacturer\": \"Hyundai\",\r\n        \"model\": \"Kona\",\r\n        \"color\": \"Darkgreen\",\r\n        \"airConditioner\": {\r\n            \"id\": 1,\r\n            \"numAirVents\": 5,\r\n            \"on\": true\r\n        },\r\n        \"battery\": {\r\n            \"id\": 1,\r\n            \"capacity\": \"95kWh\",\r\n            \"on\": true\r\n        },\r\n        \"carDoors\": {\r\n            \"id\": 1,\r\n            \"doors\": 4\r\n        },\r\n        \"engine\": {\r\n            \"id\": 1,\r\n            \"cc\": 2500.0,\r\n            \"cv\": 190.0,\r\n            \"on\": true\r\n        },\r\n        \"chargingPort\": {\r\n            \"id\": 1,\r\n            \"numPorts\": 2,\r\n            \"timeCharge\": \"40 minutos\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/electric",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electric"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electric/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electric/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electric",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/electric",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/electric",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"electric"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gasoline",
+			"item": [
+				{
+					"name": "/api/gasoline",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gasoline",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gasoline"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/gasoline/2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gasoline/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gasoline",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/gasoline/manufacturer/Subaru",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gasoline/manufacturer/Subaru",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gasoline",
+								"manufacturer",
+								"Subaru"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/gasoline/color/Darkblue",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gasoline/color/Darkblue",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gasoline",
+								"color",
+								"Darkblue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/gasoline/doors/3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gasoline/doors/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gasoline",
+								"doors",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Extra: ver Facade tipo Gasoline",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicle/gasoline",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicle",
+								"gasoline"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/gasoline",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 0,\r\n        \"manufacturer\": \"Honda\",\r\n        \"model\": \"Civic\",\r\n        \"color\": \"Orange\",\r\n        \"airConditioner\": {\r\n            \"id\": 1,\r\n            \"numAirVents\": 6,\r\n            \"on\": true\r\n        },\r\n        \"battery\": {\r\n            \"id\": 1,\r\n            \"capacity\": \"35kWh\",\r\n            \"on\": true\r\n        },\r\n        \"carDoors\": {\r\n            \"id\": 1,\r\n            \"doors\": 3\r\n        },\r\n        \"engine\": {\r\n            \"id\": 1,\r\n            \"cc\": 2000.0,\r\n            \"cv\": 170.0,\r\n            \"on\": true\r\n        },\r\n        \"gasolineTank\": {\r\n            \"id\": 1,\r\n            \"liters\": 85\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gasoline",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gasoline"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/gasoline",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"manufacturer\": \"Ford\",\r\n        \"model\": \"Mustang\",\r\n        \"color\": \"Black\",\r\n        \"airConditioner\": {\r\n            \"id\": 1,\r\n            \"numAirVents\": 4,\r\n            \"on\": true\r\n        },\r\n        \"battery\": {\r\n            \"id\": 1,\r\n            \"capacity\": \"35kWh\",\r\n            \"on\": true\r\n        },\r\n        \"carDoors\": {\r\n            \"id\": 1,\r\n            \"doors\": 3\r\n        },\r\n        \"engine\": {\r\n            \"id\": 1,\r\n            \"cc\": 3500.0,\r\n            \"cv\": 220.0,\r\n            \"on\": true\r\n        },\r\n        \"gasolineTank\": {\r\n            \"id\": 1,\r\n            \"liters\": 90\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/gasoline",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gasoline"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/gasoline/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gasoline/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gasoline",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/gasoline",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/gasoline",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"gasoline"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hybrid",
+			"item": [
+				{
+					"name": "/api/hybrid/3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hybrid/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hybrid",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hybrid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hybrid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hybrid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hybrid/manufacturer/Toyota",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hybrid/manufacturer/Toyota",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hybrid",
+								"manufacturer",
+								"Toyota"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hybrid/color/Silver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hybrid/color/Silver",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hybrid",
+								"color",
+								"Silver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hybrid/doors/5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hybrid/doors/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hybrid",
+								"doors",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Extra: ver Facade tipo Hybrid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/vehicle/hybrid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"vehicle",
+								"hybrid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hybrid",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 0,\r\n        \"manufacturer\": \"Hyundai\",\r\n        \"model\": \"Ioniq\",\r\n        \"color\": \"Blue\",\r\n        \"airConditioner\": {\r\n            \"id\": 1,\r\n            \"numAirVents\": 4,\r\n            \"on\": true\r\n        },\r\n        \"battery\": {\r\n            \"id\": 1,\r\n            \"capacity\": \"60kWh\",\r\n            \"on\": true\r\n        },\r\n        \"carDoors\": {\r\n            \"id\": 1,\r\n            \"doors\": 4\r\n        },\r\n        \"engine\": {\r\n            \"id\": 1,\r\n            \"cc\": 1400.0,\r\n            \"cv\": 110.0,\r\n            \"on\": true\r\n        },\r\n        \"gasTank\": {\r\n            \"id\": 1,\r\n            \"liters\": 80\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/hybrid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hybrid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hybrid",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"manufacturer\": \"Kia\",\r\n        \"model\": \"Niro\",\r\n        \"color\": \"White\",\r\n        \"airConditioner\": {\r\n            \"id\": 1,\r\n            \"numAirVents\": 6,\r\n            \"on\": true\r\n        },\r\n        \"battery\": {\r\n            \"id\": 1,\r\n            \"capacity\": \"70kWh\",\r\n            \"on\": true\r\n        },\r\n        \"carDoors\": {\r\n            \"id\": 1,\r\n            \"doors\": 5\r\n        },\r\n        \"engine\": {\r\n            \"id\": 1,\r\n            \"cc\": 1800.0,\r\n            \"cv\": 140.0,\r\n            \"on\": true\r\n        },\r\n        \"gasTank\": {\r\n            \"id\": 1,\r\n            \"liters\": 80\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/hybrid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hybrid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hybrid/2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hybrid/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hybrid",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/hybrid",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/hybrid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"hybrid"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
