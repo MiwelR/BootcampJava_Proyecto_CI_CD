@@ -9,7 +9,7 @@ public class VehicleFactory {
 	private static final String HYBRID = "hybrid";
 	
 	public VehicleFactory() {
-		
+		// Constructor vacío
 	}
 	
 	public static Vehicle createByType(String type) {

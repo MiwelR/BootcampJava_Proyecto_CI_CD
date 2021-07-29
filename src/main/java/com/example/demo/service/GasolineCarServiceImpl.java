@@ -136,8 +136,9 @@ public class GasolineCarServiceImpl implements GasolineCarService {
      * @return
      */
     private Long getMaxGasolineCarId() {
-    	if (gasolinecars.isEmpty())
+		if (gasolinecars.isEmpty()) {
 			return 0L;
+		}
 
         return Collections.max(gasolinecars.entrySet(),
                 (entry1, entry2) -> (int) (entry1.getKey() - entry2.getKey())

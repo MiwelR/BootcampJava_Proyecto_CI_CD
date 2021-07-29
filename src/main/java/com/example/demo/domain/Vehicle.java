@@ -16,11 +16,11 @@ public abstract class Vehicle {
 	private CarDoors carDoors;
 	private Engine engine;
 	
-	public Vehicle() {
+	protected Vehicle() {
 		
 	}
 
-	public Vehicle(Long id, String manufacturer, String model, String color, AirConditioner airConditioner, Battery battery, CarDoors carDoors,
+	protected Vehicle(Long id, String manufacturer, String model, String color, AirConditioner airConditioner, Battery battery, CarDoors carDoors,
 			Engine engine) {
 		this.id = id;
 		this.manufacturer = manufacturer;

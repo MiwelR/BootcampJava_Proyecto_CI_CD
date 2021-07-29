@@ -30,7 +30,7 @@ public class VehicleFacade {
 		ChargingPort chargingPort = new ChargingPort(1L, 2, "90 minutos");
 		
 		// generating vehicle type
-		ElectricCar electricCar = new ElectricCar(1L, "Coche", "Eléctrico", "Azul", airConditioner, battery, carDoors, engine, chargingPort);
+		ElectricCar electricCar = new ElectricCar(1L, "Coche 1", "Eléctrico", "Azul", airConditioner, battery, carDoors, engine, chargingPort);
 		electricCar.getBattery().start();
 		electricCar.getEngine().start();
 		electricCar.getAirConditioner().start();
@@ -49,7 +49,7 @@ public class VehicleFacade {
 		GasolineTank gasolineTank = new GasolineTank(1L, 80);
 		
 		// generating vehicle type
-		GasolineCar gasolineCar = new GasolineCar(1L, "Coche", "Gasolina", "Blanco", airConditioner, battery, carDoors, engine, gasolineTank);
+		GasolineCar gasolineCar = new GasolineCar(1L, "Coche 2", "Gasolina", "Blanco", airConditioner, battery, carDoors, engine, gasolineTank);
 		gasolineCar.getBattery().start();
 		gasolineCar.getEngine().start();
 		gasolineCar.getAirConditioner().start();
@@ -69,7 +69,7 @@ public class VehicleFacade {
 		GasTank gasTank = new GasTank(1L, 95);
 		
 		// generating vehicle type
-		HybridCar hybridCar = new HybridCar(1L, "Coche", "Híbrido", "Negro", airConditioner, battery, carDoors, engine, gasTank);
+		HybridCar hybridCar = new HybridCar(1L, "Coche 3", "Híbrido", "Negro", airConditioner, battery, carDoors, engine, gasTank);
 		hybridCar.getBattery().start();
 		hybridCar.getEngine().start();
 		hybridCar.getAirConditioner().start();

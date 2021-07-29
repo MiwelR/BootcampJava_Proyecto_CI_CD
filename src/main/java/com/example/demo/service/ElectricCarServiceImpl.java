@@ -131,8 +131,9 @@ public class ElectricCarServiceImpl implements ElectricCarService{
      * @return
      */
     private Long getMaxElectricCarId() {
-    	if (electriccars.isEmpty())
+		if (electriccars.isEmpty()) {
 			return 0L;
+		}
 
         return Collections.max(electriccars.entrySet(),
                 (entry1, entry2) -> (int) (entry1.getKey() - entry2.getKey())

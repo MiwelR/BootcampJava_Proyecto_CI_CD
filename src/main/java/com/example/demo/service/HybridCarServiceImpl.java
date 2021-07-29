@@ -135,8 +135,9 @@ public class HybridCarServiceImpl implements HybridCarService {
      * @return
      */
     private Long getMaxHybridCarId() {
-    	if (hybridcars.isEmpty())
+		if (hybridcars.isEmpty()) {
 			return 0L;
+		}
 
         return Collections.max(hybridcars.entrySet(),
                 (entry1, entry2) -> (int) (entry1.getKey() - entry2.getKey())
