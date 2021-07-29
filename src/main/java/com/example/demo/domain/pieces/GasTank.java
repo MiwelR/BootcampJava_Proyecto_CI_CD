@@ -3,11 +3,11 @@ package com.example.demo.domain.pieces;
 public class GasTank {
 
 	private Long id;
-	private Integer liters;
+	private Integer litersGas;
 	
 	public GasTank(Long id, Integer liters) {
 		this.id = id;
-		this.liters = liters;
+		this.litersGas = liters;
 	}
 
 	public Long getId() {
@@ -16,16 +16,16 @@ public class GasTank {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public Integer getLiters() {
-		return liters;
+	public Integer getLitersGas() {
+		return litersGas;
 	}
-	public void setLiters(Integer liters) {
-		this.liters = liters;
+	public void setLitersGas(Integer liters) {
+		this.litersGas = liters;
 	}
 
 	@Override
 	public String toString() {
-		return "GasTank [id=" + id + ", liters=" + liters + "]";
+		return "GasTank [id=" + id + ", liters=" + litersGas + "]";
 	}
 	
 }

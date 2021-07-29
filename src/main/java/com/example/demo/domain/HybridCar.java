@@ -17,15 +17,15 @@ public class HybridCar extends Vehicle {
 	public HybridCar(Long id, String manufacturer, String model, String color, AirConditioner airConditioner, Battery battery, CarDoors carDoors,
 			Engine engine, GasTank gasTank) {
 		super(id, manufacturer, model, color, airConditioner, battery, carDoors, engine);
-		this.gasTank = gasTank != null ? new GasTank(gasTank.getId(), gasTank.getLiters()) : null;
+		this.gasTank = gasTank != null ? new GasTank(gasTank.getId(), gasTank.getLitersGas()) : null;
 	}
 
 	public GasTank getGasTank() {
-		return gasTank != null ? new GasTank(gasTank.getId(), gasTank.getLiters()) : null;
+		return gasTank != null ? new GasTank(gasTank.getId(), gasTank.getLitersGas()) : null;
 	}
 
 	public void setGasTank(GasTank gasTank) {
-		this.gasTank = gasTank != null ? new GasTank(gasTank.getId(), gasTank.getLiters()) : null;
+		this.gasTank = gasTank != null ? new GasTank(gasTank.getId(), gasTank.getLitersGas()) : null;
 	}
 
 	@Override

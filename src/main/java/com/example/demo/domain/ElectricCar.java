@@ -10,6 +10,7 @@ public class ElectricCar extends Vehicle {
 
 	private ChargingPort chargingPort;
 
+
 	public ElectricCar() {
 
 	}
