@@ -8,8 +8,8 @@ public class VehicleFactory {
 	private static final String GASOLINE = "gasoline";
 	private static final String HYBRID = "hybrid";
 	
-	public VehicleFactory() {
-		// Constructor vacío
+	private VehicleFactory() {
+		
 	}
 	
 	public static Vehicle createByType(String type) {

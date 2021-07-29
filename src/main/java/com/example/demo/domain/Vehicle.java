@@ -30,9 +30,6 @@ public abstract class Vehicle {
 		this.battery = battery != null ? new Battery(battery.getId(), battery.getCapacity()) : null;
 		this.carDoors = carDoors != null ? new CarDoors(carDoors.getId(), carDoors.getDoors()) : null;
 		this.engine = engine != null ? new Engine(engine.getId(), engine.getCc(), engine.getCv()) : null;
-//		this.airConditioner.start();
-//		this.battery.start();
-//		this.engine.start();
 	}
 
 	public Long getId() {

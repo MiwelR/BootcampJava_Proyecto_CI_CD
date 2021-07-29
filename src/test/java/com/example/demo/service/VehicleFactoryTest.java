@@ -9,7 +9,6 @@ import com.example.demo.domain.Vehicle;
 
 public class VehicleFactoryTest {
 
-	VehicleFactory pruebaThrow = new VehicleFactory();
 	
 	@Test
 	@DisplayName("Test createByType")

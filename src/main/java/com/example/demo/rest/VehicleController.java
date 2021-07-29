@@ -1,5 +1,8 @@
 package com.example.demo.rest;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -21,6 +24,7 @@ import com.example.demo.service.VehicleFactory;
 @Produces(MediaType.APPLICATION_JSON)
 public class VehicleController {
 
+	private final Logger log = LoggerFactory.getLogger(VehicleController.class);
 	/**
 	 * http://localhost:8080/api/vehicle
 	 * 
@@ -43,7 +47,8 @@ public class VehicleController {
 	@GET
 	@Path("/{type}")
 	public Response createByType(@PathParam("type") String type) {
-		System.out.println("VehicleController executing createByType.");
+//		System.out.println("VehicleController executing createByType.");
+		log.info("VehicleController executing createByType.");
 		try {
 			return Response
 					.ok()
