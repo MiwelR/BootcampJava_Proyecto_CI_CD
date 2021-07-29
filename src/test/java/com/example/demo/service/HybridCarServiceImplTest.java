@@ -17,7 +17,7 @@ import com.example.demo.domain.pieces.CarDoors;
 import com.example.demo.domain.pieces.Engine;
 import com.example.demo.domain.pieces.GasTank;
 
-class HybridCarServiceImplTest {
+public class HybridCarServiceImplTest {
 
 HybridCarService hybridcars;
 	
