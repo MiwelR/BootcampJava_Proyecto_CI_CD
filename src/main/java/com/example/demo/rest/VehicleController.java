@@ -47,7 +47,6 @@ public class VehicleController {
 	@GET
 	@Path("/{type}")
 	public Response createByType(@PathParam("type") String type) {
-//		System.out.println("VehicleController executing createByType.");
 		log.info("VehicleController executing createByType.");
 		try {
 			return Response

@@ -15,7 +15,7 @@ import com.example.demo.domain.pieces.CarDoors;
 import com.example.demo.domain.pieces.ChargingPort;
 import com.example.demo.domain.pieces.Engine;
 
-public class ElectricCarServiceImplTest {
+class ElectricCarServiceImplTest {
 
 	ElectricCarService electriccars;
 	

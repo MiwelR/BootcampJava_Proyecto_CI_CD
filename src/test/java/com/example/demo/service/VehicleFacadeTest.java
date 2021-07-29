@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import com.example.demo.domain.Vehicle;
 
 
-public class VehicleFacadeTest {
+class VehicleFacadeTest {
 	
 	@Test
 	@DisplayName("Test createElectric")

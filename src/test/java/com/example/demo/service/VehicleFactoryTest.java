@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import com.example.demo.domain.Vehicle;
 
-public class VehicleFactoryTest {
+class VehicleFactoryTest {
 
 	
 	@Test
