@@ -1,4 +1,4 @@
-name: Java CI Build and SonarCloud
+name: Java CI Build and Sonarcloud
 on:
   push:
     branches:
