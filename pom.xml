@@ -18,6 +18,11 @@
 		<java.version>16</java.version>
 		<maven.compiler.source>16</maven.compiler.source>
 		<maven.compiler.target>16</maven.compiler.target>
+		
+		<!-- Sonar -->
+		<sonar.projectKey>MiwelR_BootcampJava_Proyecto_CI_CD</sonar.projectKey>
+		<sonar.organization>miwelr</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	<dependencies>
 		<dependency>
